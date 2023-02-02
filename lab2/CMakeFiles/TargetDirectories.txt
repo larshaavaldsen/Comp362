@@ -1,0 +1,3 @@
+/home/lars/comp362/lab2/CMakeFiles/sub.dir
+/home/lars/comp362/lab2/CMakeFiles/edit_cache.dir
+/home/lars/comp362/lab2/CMakeFiles/rebuild_cache.dir
