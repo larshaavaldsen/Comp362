@@ -1,0 +1,43 @@
+Script started on 2023-02-07 02:36:00+00:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="310" LINES="42"]
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab2[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab2[00m$ exitsub -i test.txt -o out.txt --a -+xexit[Ksub -i test.txt -o out.txt --a -+x[21Pcat test.txt [1Pou[C[C[C[C[C[C[1@tes[C[C[C[C[C[Csub -i test.txt -o out.txt --a -+x[21Pcat test.txt [1Pou[C[C[C[C[C[C./sub --a -+x -i test.txt -o out.txt
+[?2004l[?2004h]0;lars@racknerd-9457be: ~/comp362/lab2[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab2[00m$ ./sub --a -+x -i test.txt -o out.txtexit[Ksub -i test.txt -o out.txt --a -+xexit[Ksub -i test.txt -o out.txt --a -+x[21Pcat test.txt [1Pou[C[C[C[C[C[C./sub --a -+x -i test.txt -o out.txt[24Pcat out.txt [1@tes[C[C[C[C[C[C
+[?2004lHello world,
+
+Random words..
+
+adgaaaaaaaaaaadfhhhhhhhhsfgsfgadfhsdojfnnnnnnnnnnnnnnnhhhhhhhhhhhhhhhhhhhdoghijdgohijsdgiphojsdg[piohj[gfsdphifsgdhfgdhfghfgh]][?2004h]0;lars@racknerd-9457be: ~/comp362/lab2[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab2[00m$ cat out[Kt.text[K[K[Kxt
+[?2004lHello world,
+
+Rxndom words..
+
+xdgxxxxxxxxxxxdfhhhhhhhhsfgsfgxdfhsdojfnnnnnnnnnnnnnnnhhhhhhhhhhhhhhhhhhhdoghijdgohijsdgiphojsdg[piohj[gfsdphifsgdhfgdhfghfgh]][?2004h]0;lars@racknerd-9457be: ~/comp362/lab2[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab2[00m$ cat out.txttest.txt ./sub --a -+x -i test.txt -o out.txtexit[Ksub -i test.txt -o out.txt --a -+x[1@.[1@/
+[?2004l[?2004h]0;lars@racknerd-9457be: ~/comp362/lab2[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab2[00m$ ./sub -i test.txt -o out.txt --a -+xcat out.txt[Ktest.txt [2Pout.txttest.txt 
+[?2004lHello world,
+
+Random words..
+
+adgaaaaaaaaaaadfhhhhhhhhsfgsfgadfhsdojfnnnnnnnnnnnnnnnhhhhhhhhhhhhhhhhhhhdoghijdgohijsdgiphojsdg[piohj[gfsdphifsgdhfgdhfghfgh]][?2004h]0;lars@racknerd-9457be: ~/comp362/lab2[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab2[00m$ cat test.txt ./sub -i test.txt -o out.txt --a -+xcat out.txt[Ktest.txt [2Pout.txt
+[?2004lHello world,
+
+Rxndom words..
+
+xdgxxxxxxxxxxxdfhhhhhhhhsfgsfgxdfhsdojfnnnnnnnnnnnnnnnhhhhhhhhhhhhhhhhhhhdoghijdgohijsdgiphojsdg[piohj[gfsdphifsgdhfgdhfghfgh]][?2004h]0;lars@racknerd-9457be: ~/comp362/lab2[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab2[00m$ cat out.txttest.txt ./sub -i test.txt -o out.txt --a -+xcat out.txt[K./sub -i test.txt -o out.txt --a -+xi -+xo -+x[C[C[C[Cas
+[?2004l[?2004h]0;lars@racknerd-9457be: ~/comp362/lab2[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab2[00m$ ./sub -i test.txt -o out.txt --aio -+xas[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat out.txt[Ktest.txt 
+[?2004lHello world,
+
+Random words..
+
+adgaaaaaaaaaaadfhhhhhhhhsfgsfgadfhsdojfnnnnnnnnnnnnnnnhhhhhhhhhhhhhhhhhhhdoghijdgohijsdgiphojsdg[piohj[gfsdphifsgdhfgdhfghfgh]][?2004h]0;lars@racknerd-9457be: ~/comp362/lab2[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab2[00m$ cat test.txt ./sub -i test.txt -o out.txt --aio -+xas[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat out.txt[K
+[?2004lHells wsrld,
+
+Rxndsm wsrds..
+
+xdgxxxxxxxxxxxdfhhhhhhhhsfgsfgxdfhsdsjfnnnnnnnnnnnnnnnhhhhhhhhhhhhhhhhhhhdsghajdgshajsdgaphsjsdg[pashj[gfsdphafsgdhfgdhfghfgh]][?2004h]0;lars@racknerd-9457be: ~/comp362/lab2[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab2[00m$ cat out.txttest.txt ./sub -i test.txt -o out.txt --aio -+xas[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat out.txt[K./sub -i test.txt -o out.txt --aio -+xas[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat test.txt [K[2Pout.txt[K./[K[K./[7msub --ab -+xyz[27msub --ab -+xyz
+[?2004lsub: WARNING - extraneous replacement character
+^C
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab2[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab2[00m$ ./sub --ab -+xyze -+xyz[C[C[C[C[C[C[K
+[?2004lsub: ERROR - missing replacement character
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab2[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab2[00m$ exit
+[?2004lexit
+
+Script done on 2023-02-07 02:38:06+00:00 [COMMAND_EXIT_CODE="1"]

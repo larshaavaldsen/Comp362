@@ -1,4 +1,8 @@
-// By Lars Haavaldsen - 2/2/22
+/**
+  * Lars Haavaldsen
+  * COMP 362L
+  * Spring 2023
+ **/
 
 #include <stdio.h>
 #include <string.h>
@@ -22,7 +26,7 @@ int main(int argc, char **argv) {
             case '-':
                 switch (argv[i][1]) {
                     case 'h': 
-                        printf("help menu placeholder\n"); break;
+                        printf("Help Menu\n"); return 0; break;
                     case '-': 
                         fromChar = argv[i] + 2; 
                         break;
