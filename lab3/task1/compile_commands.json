@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/lars/comp362/lab3/task1",
+  "command": "/usr/bin/cc    -D_FILE_OFFSET_BITS=64 -g -Wall --pedantic -g -O0 -D_DEBUG -std=gnu11 -o CMakeFiles/parent.dir/parent.c.o -c /home/lars/comp362/lab3/task1/parent.c",
+  "file": "/home/lars/comp362/lab3/task1/parent.c"
+},
+{
+  "directory": "/home/lars/comp362/lab3/task1",
+  "command": "/usr/bin/cc    -D_FILE_OFFSET_BITS=64 -g -Wall --pedantic -g -O0 -D_DEBUG -std=gnu11 -o CMakeFiles/child.dir/child.c.o -c /home/lars/comp362/lab3/task1/child.c",
+  "file": "/home/lars/comp362/lab3/task1/child.c"
+},
+{
+  "directory": "/home/lars/comp362/lab3/task1",
+  "command": "/usr/bin/cc    -D_FILE_OFFSET_BITS=64 -g -Wall --pedantic -g -O0 -D_DEBUG -std=gnu11 -o CMakeFiles/memory_layout.dir/memory_layout.c.o -c /home/lars/comp362/lab3/task1/memory_layout.c",
+  "file": "/home/lars/comp362/lab3/task1/memory_layout.c"
+}
+]

@@ -1,0 +1,5 @@
+/home/lars/comp362/lab3/task1/CMakeFiles/parent.dir
+/home/lars/comp362/lab3/task1/CMakeFiles/child.dir
+/home/lars/comp362/lab3/task1/CMakeFiles/memory_layout.dir
+/home/lars/comp362/lab3/task1/CMakeFiles/edit_cache.dir
+/home/lars/comp362/lab3/task1/CMakeFiles/rebuild_cache.dir

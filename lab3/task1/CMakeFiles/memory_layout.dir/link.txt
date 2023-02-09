@@ -1,0 +1,1 @@
+/usr/bin/cc  -D_FILE_OFFSET_BITS=64 -g -Wall --pedantic -g -O0 -D_DEBUG -rdynamic CMakeFiles/memory_layout.dir/memory_layout.c.o -o bin/memory_layout 
