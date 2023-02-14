@@ -1,0 +1,4 @@
+/home/lars/comp362/lab3/task2/CMakeFiles/proc_hier.dir
+/home/lars/comp362/lab3/task2/CMakeFiles/iam.dir
+/home/lars/comp362/lab3/task2/CMakeFiles/edit_cache.dir
+/home/lars/comp362/lab3/task2/CMakeFiles/rebuild_cache.dir
