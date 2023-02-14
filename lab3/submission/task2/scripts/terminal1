@@ -1,0 +1,22 @@
+Script started on 2023-02-09 22:26:05+00:00 [TERM="xterm-256color" TTY="/dev/pts/9" COLUMNS="201" LINES="47"]
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab3/task2/bin[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab3/task2/bin[00m$ ./proc_hier 
+[?2004lI am the parent 320479
+I am the child 320482
+I am the child 320480
+I am the child 320483
+I am the child 320481
+Process Hello Parent! Please do not kill me! pid is: 320482
+Process Hello Parent! Please do not kill me! pid is: 320483
+Process Hello Parent! Please do not kill me! pid is: 320481
+Process Hello Parent! Please do not kill me! pid is: 320480
+I am the child 320484
+I am the child 320485
+Process Hello Parent! Please do not kill me! pid is: 320484
+Process Hello Parent! Please do not kill me!  pid is: 320485
+Process Hello Parent! Please do not kill me! is terminating
+Process Hello Parent! Please do not kill me! is terminating
+Child terminated; parent exiting
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab3/task2/bin[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab3/task2/bin[00m$ exit
+[?2004lexit
+
+Script done on 2023-02-09 22:29:24+00:00 [COMMAND_EXIT_CODE="0"]

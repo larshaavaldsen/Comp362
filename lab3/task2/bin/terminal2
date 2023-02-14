@@ -1,0 +1,16 @@
+Script started on 2023-02-09 22:26:10+00:00 [TERM="xterm-256color" TTY="/dev/pts/15" COLUMNS="201" LINES="47"]
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab3/task2/bin[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab3/task2/bin[00m$ clear./proc_hier [7Pcleard bin/[2Plear[1Pmakeclear[1Pmakeclear[3Plscd ..lear./proc_hier [5Pcd bin/[2Plear[1Pmakeclearear[1Par[1Pmakecd .../proc_hier [5Pcd bin/[3Pmakecd ..lear./proc_hier [5Pcd bin/[3Pmakecd ..[1Pmakecd bin/./proc_hier [7Pcleard ..[1Pmakecd bin/./proc_hier [7Pcd ..[1Pmakeclearear[1Par[1Pmakecleard bin/./proc_hier [7Pcleard ..[3Plsclear[1Pmakeclear[1Pmakecleard bin/[2Plear./proc_hier [7Pclear[K[7mps -elf | grep "proc_hier\|iam"[27mps -elf | grep "proc_hier\|iam"
+[?2004l0 S lars      320479  320346  0  80   0 -   693 do_wai 22:26 pts/13   00:00:00 ./[01;31m[Kproc_hier[m[K
+0 R lars      320480  320479 65  80   0 -   693 -      22:26 pts/13   00:00:16 [01;31m[Kiam[m[K Hello Parent! Please do not kill me! 1.1
+0 R lars      320481  320479 64  80   0 -   693 -      22:26 pts/13   00:00:16 [01;31m[Kiam[m[K Hello Parent! Please do not kill me! 1.2
+0 R lars      320482  320480 64  80   0 -   693 -      22:26 pts/13   00:00:16 [01;31m[Kiam[m[K Hello Parent! Please do not kill me! 1.1.1
+0 R lars      320483  320481 64  80   0 -   693 -      22:26 pts/13   00:00:16 [01;31m[Kiam[m[K Hello Parent! Please do not kill me! 1.2.1
+0 R lars      320484  320480 64  80   0 -   693 -      22:26 pts/13   00:00:16 [01;31m[Kiam[m[K Hello Parent! Please do not kill me! 1.1.2
+0 R lars      320485  320481 64  80   0 -   693 -      22:26 pts/13   00:00:16 [01;31m[Kiam[m[K Hello Parent! Please do not kill me!  1.2.2
+0 S lars      320578  320371  0  80   0 -  1652 pipe_r 22:26 pts/14   00:00:00 grep --color=auto [01;31m[Kproc_hier[m[K\|[01;31m[Kiam[m[K
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab3/task2/bin[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab3/task2/bin[00m$ ps -elf | grep "proc_hier\|iam"clear[Kps -elf | grep "proc_hier\|iam"[Kkill -KILL [7m320482[27m320482 [7m320484[27m320484
+[?2004l[?2004h]0;lars@racknerd-9457be: ~/comp362/lab3/task2/bin[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab3/task2/bin[00m$ kill -KILL [7m320483[27m320483 [7m320485[27m320485
+[?2004l[?2004h]0;lars@racknerd-9457be: ~/comp362/lab3/task2/bin[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab3/task2/bin[00m$ exit
+[?2004lexit
+
+Script done on 2023-02-09 22:29:26+00:00 [COMMAND_EXIT_CODE="0"]
