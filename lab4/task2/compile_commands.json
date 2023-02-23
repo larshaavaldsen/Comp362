@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/lars/comp362/lab4/task2",
+  "command": "/usr/bin/cc    -D_FILE_OFFSET_BITS=64 -std=gnu11 -o CMakeFiles/monitor.dir/monitor.c.o -c /home/lars/comp362/lab4/task2/monitor.c",
+  "file": "/home/lars/comp362/lab4/task2/monitor.c"
+},
+{
+  "directory": "/home/lars/comp362/lab4/task2",
+  "command": "/usr/bin/cc    -D_FILE_OFFSET_BITS=64 -std=gnu11 -o CMakeFiles/node.dir/node.c.o -c /home/lars/comp362/lab4/task2/node.c",
+  "file": "/home/lars/comp362/lab4/task2/node.c"
+}
+]

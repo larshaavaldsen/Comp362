@@ -23,7 +23,7 @@ int main(int argc, char **argv) {
     for(int i = 1; i < argc; i++) {
         char c = argv[i][0];
         switch (c) {
-            case '-':z
+            case '-':
                 switch (argv[i][1]) {
                     case 'h': 
                         printf("Help Menu\n"); return 0; break;

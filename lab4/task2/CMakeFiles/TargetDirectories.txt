@@ -1,0 +1,4 @@
+/home/lars/comp362/lab4/task2/CMakeFiles/monitor.dir
+/home/lars/comp362/lab4/task2/CMakeFiles/node.dir
+/home/lars/comp362/lab4/task2/CMakeFiles/edit_cache.dir
+/home/lars/comp362/lab4/task2/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,14 @@
+Script started on 2023-02-16 20:13:54+00:00 [TERM="xterm-256color" TTY="/dev/pts/11" COLUMNS="87" LINES="20"]
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab4/task1[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab4/task1[00m$ ./ipc_POSIX/[K[K[K[K[K[K[K[K[K[K[K[Kcd bin
+[?2004l[?2004h]0;lars@racknerd-9457be: ~/comp362/lab4/task1/bin[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab4/task1/bin[00m$ l[K./ipc_POSIX_sender 
+[?2004lQueue opened with:
+Maximum # of messages on queue:   10
+Maximum message size:             8192
+Sent: "Hello receiver!"
+Run the receiver.
+To continue, press Enter on the keybord...
+Received: "Hello receiver!" of type 1
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab4/task1/bin[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab4/task1/bin[00m$ exit
+[?2004lexit
+
+Script done on 2023-02-16 20:14:52+00:00 [COMMAND_EXIT_CODE="0"]

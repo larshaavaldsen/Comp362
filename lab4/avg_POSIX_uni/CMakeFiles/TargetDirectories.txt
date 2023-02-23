@@ -1,0 +1,4 @@
+/home/lars/comp362/lab4/avg_POSIX_uni/CMakeFiles/avg_server.dir
+/home/lars/comp362/lab4/avg_POSIX_uni/CMakeFiles/avg_client.dir
+/home/lars/comp362/lab4/avg_POSIX_uni/CMakeFiles/edit_cache.dir
+/home/lars/comp362/lab4/avg_POSIX_uni/CMakeFiles/rebuild_cache.dir
