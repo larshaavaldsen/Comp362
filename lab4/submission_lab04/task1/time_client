@@ -1,0 +1,17 @@
+Script started on 2023-02-23 18:03:41+00:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="151" LINES="16"]
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab4/task1/bin[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab4/task1/bin[00m$ exit./pipe2 ls catexit[K[K./shm_POSIX_time_client 
+[?2004lTIME NOW: Thu Feb 23 18:03:54 2023
+
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab4/task1/bin[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab4/task1/bin[00m$ ./shm_POSIX_time_client 
+[?2004lTIME NOW: Thu Feb 23 18:03:56 2023
+
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab4/task1/bin[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab4/task1/bin[00m$ ./shm_POSIX_time_client 
+[?2004lTIME NOW: Thu Feb 23 18:04:00 2023
+
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab4/task1/bin[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab4/task1/bin[00m$ ./shm_POSIX_time_client 
+[?2004lTIME NOW: Thu Feb 23 18:04:02 2023
+
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab4/task1/bin[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab4/task1/bin[00m$ exit
+[?2004lexit
+
+Script done on 2023-02-23 18:04:03+00:00 [COMMAND_EXIT_CODE="0"]

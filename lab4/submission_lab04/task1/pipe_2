@@ -1,0 +1,16 @@
+Script started on 2023-02-23 18:02:30+00:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="328" LINES="16"]
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab4/task1/bin[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab4/task1/bin[00m$ exit./monitor 100 4 10 20 20 10[6P2 10 20[1P1 100 2 10 204 10 20 20 10exit[K[K./pipe2 ls cat
+[?2004lipc_POSIX_receiver
+ipc_POSIX_sender
+npipe_receiver
+npipe_sender
+pipe
+pipe1
+pipe_2
+pipe2
+shm_POSIX_time_client
+shm_POSIX_time_server
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab4/task1/bin[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab4/task1/bin[00m$ exit
+[?2004lexit
+
+Script done on 2023-02-23 18:02:42+00:00 [COMMAND_EXIT_CODE="0"]
