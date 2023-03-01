@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/lars/comp362/lab5",
+  "command": "/usr/bin/cc    -D_FILE_OFFSET_BITS=64 -g -Wall --pedantic -g -O0 -D_DEBUG -std=gnu11 -o CMakeFiles/matrixMult.dir/matrixMult.c.o -c /home/lars/comp362/lab5/matrixMult.c",
+  "file": "/home/lars/comp362/lab5/matrixMult.c"
+}
+]

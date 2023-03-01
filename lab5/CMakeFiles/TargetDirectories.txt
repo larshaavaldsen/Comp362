@@ -1,0 +1,3 @@
+/home/lars/comp362/lab5/CMakeFiles/matrixMult.dir
+/home/lars/comp362/lab5/CMakeFiles/edit_cache.dir
+/home/lars/comp362/lab5/CMakeFiles/rebuild_cache.dir
