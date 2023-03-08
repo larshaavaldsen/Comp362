@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/lars/comp362/lab6",
+  "command": "/usr/bin/cc  -I/home/lars/comp362/lab6/inc  -D_FILE_OFFSET_BITS=64 -g -Wall --pedantic -g -O0 -D_DEBUG -std=gnu11 -o CMakeFiles/cpuSchedulerL.dir/src/cpuScheduler.c.o -c /home/lars/comp362/lab6/src/cpuScheduler.c",
+  "file": "/home/lars/comp362/lab6/src/cpuScheduler.c"
+},
+{
+  "directory": "/home/lars/comp362/lab6",
+  "command": "/usr/bin/cc  -I/home/lars/comp362/lab6/inc  -D_FILE_OFFSET_BITS=64 -g -Wall --pedantic -g -O0 -D_DEBUG -std=gnu11 -o CMakeFiles/cpuSchedulerL.dir/src/llist/processQueueLList.c.o -c /home/lars/comp362/lab6/src/llist/processQueueLList.c",
+  "file": "/home/lars/comp362/lab6/src/llist/processQueueLList.c"
+},
+{
+  "directory": "/home/lars/comp362/lab6",
+  "command": "/usr/bin/cc  -I/home/lars/comp362/lab6/inc  -D_FILE_OFFSET_BITS=64 -g -Wall --pedantic -g -O0 -D_DEBUG -std=gnu11 -o CMakeFiles/cpuSchedulerA.dir/src/cpuScheduler.c.o -c /home/lars/comp362/lab6/src/cpuScheduler.c",
+  "file": "/home/lars/comp362/lab6/src/cpuScheduler.c"
+},
+{
+  "directory": "/home/lars/comp362/lab6",
+  "command": "/usr/bin/cc  -I/home/lars/comp362/lab6/inc  -D_FILE_OFFSET_BITS=64 -g -Wall --pedantic -g -O0 -D_DEBUG -std=gnu11 -o CMakeFiles/cpuSchedulerA.dir/src/array/processQueueArray.c.o -c /home/lars/comp362/lab6/src/array/processQueueArray.c",
+  "file": "/home/lars/comp362/lab6/src/array/processQueueArray.c"
+}
+]

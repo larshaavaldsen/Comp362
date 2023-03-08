@@ -1,0 +1,66 @@
+Script started on 2023-03-03 04:36:18+00:00 [TERM="xterm-256color" TTY="/dev/pts/9" COLUMNS="302" LINES="16"]
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab5[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab5[00m$ cat in.txt | m[Kbin/matrixMult 
+[?2004l
+
+MATRIX A1
+ 1  4 
+ 2  5 
+ 3  6 
+
+MATRIX B1
+ 8  7  6 
+ 5  4  3 
+
+MATRIX A1 x B1
+ 28  23  18 
+ 41  34  27 
+ 54  45  36 
+
+MATRIX A2
+ 1  5 
+ 2  6 
+ 3  7 
+ 4  8 
+
+MATRIX B2
+ 9  8  7  6  5 
+ 4  3  2  1  0 
+
+MATRIX A2 x B2
+ 29  23  17  11  5 
+ 42  34  26  18  10 
+ 55  45  35  25  15 
+ 68  56  44  32  20 
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab5[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab5[00m$ cat in.txt | bin/matrixMult [1@1
+[?2004l
+
+MATRIX A1
+ 3  4 
+ 3  2 
+
+MATRIX B1
+ 3  4 
+ 3  2 
+
+MATRIX A1 x B1
+ 21  20 
+ 15  16 
+
+MATRIX A2
+ 2  3 
+ 4  3 
+ 4  1 
+
+MATRIX B2
+ 2  3  2  3 
+ 1  2  2  3 
+
+MATRIX A2 x B2
+ 7  12  10  15 
+ 11  18  14  21 
+ 9  14  10  15 
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab5[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab5[00m$ exit
+[?2004l
+exit
+
+Script done on 2023-03-03 04:36:40+00:00 [COMMAND_EXIT_CODE="127"]

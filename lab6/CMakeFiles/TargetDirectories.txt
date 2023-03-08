@@ -1,0 +1,4 @@
+/home/lars/comp362/lab6/CMakeFiles/cpuSchedulerL.dir
+/home/lars/comp362/lab6/CMakeFiles/cpuSchedulerA.dir
+/home/lars/comp362/lab6/CMakeFiles/edit_cache.dir
+/home/lars/comp362/lab6/CMakeFiles/rebuild_cache.dir
