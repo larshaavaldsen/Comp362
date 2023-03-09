@@ -1,3 +1,8 @@
+/*
+Lars Haavaldsen
+COMP362
+:)
+*/
 #include "processQueue.h"
 #include <stdio.h>
 #include <stdlib.h>

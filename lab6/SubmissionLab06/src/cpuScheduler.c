@@ -1,3 +1,9 @@
+/*
+Lars Haavaldsen
+COMP362
+:)
+*/
+
 #include "cpuScheduler.h"
 #include "processQueue.h"
 #include <stdio.h>

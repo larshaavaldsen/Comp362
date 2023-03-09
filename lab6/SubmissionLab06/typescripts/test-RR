@@ -1,0 +1,441 @@
+Script started on 2023-03-09 16:21:14+00:00 [TERM="xterm-256color" TTY="/dev/pts/31" COLUMNS="302" LINES="16"]
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab6[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab6[00m$ exitbin/cpuSchedulerA input/in-FCFS.txt [1P [1P [1P [1P [1P [1P [1P R [1P [1P R R .txt 
+[?2004lReading input from file input/in-RR.txts.
+
+
+ALGORITHM: RR  3
+
+PROCESSES:
+
+Name    	Entry	Burst
+P1      	  0   	 15   
+P2      	  2   	  6   
+P3      	  5   	  2   
+P4      	  6   	  3   
+P5      	  7   	  7   
+
+SIMULATION:
+
+T0:
+CPU: P1(15)
+QUEUE: <empty>
+
+T1:
+CPU: P1(14)
+QUEUE: <empty>
+
+T2:
+CPU: P1(13)
+QUEUE: P2(6) 
+
+T3:
+CPU: P2(6)
+QUEUE: P1(12) 
+
+T4:
+CPU: P2(5)
+QUEUE: P1(12) 
+
+T5:
+CPU: P2(4)
+QUEUE: P1(12) P3(2) 
+
+T6:
+CPU: P1(12)
+QUEUE: P3(2) P4(3) P2(3) 
+
+T7:
+CPU: P1(11)
+QUEUE: P3(2) P4(3) P2(3) P5(7) 
+
+T8:
+CPU: P1(10)
+QUEUE: P3(2) P4(3) P2(3) P5(7) 
+
+T9:
+CPU: P3(2)
+QUEUE: P4(3) P2(3) P5(7) P1(9) 
+
+T10:
+CPU: P3(1)
+QUEUE: P4(3) P2(3) P5(7) P1(9) 
+
+T11:
+CPU: P4(3)
+QUEUE: P2(3) P5(7) P1(9) 
+
+T12:
+CPU: P4(2)
+QUEUE: P2(3) P5(7) P1(9) 
+
+T13:
+CPU: P4(1)
+QUEUE: P2(3) P5(7) P1(9) 
+
+T14:
+CPU: P2(3)
+QUEUE: P5(7) P1(9) 
+
+T15:
+CPU: P2(2)
+QUEUE: P5(7) P1(9) 
+
+T16:
+CPU: P2(1)
+QUEUE: P5(7) P1(9) 
+
+T17:
+CPU: P5(7)
+QUEUE: P1(9) 
+
+T18:
+CPU: P5(6)
+QUEUE: P1(9) 
+
+T19:
+CPU: P5(5)
+QUEUE: P1(9) 
+
+T20:
+CPU: P1(9)
+QUEUE: P5(4) 
+
+T21:
+CPU: P1(8)
+QUEUE: P5(4) 
+
+T22:
+CPU: P1(7)
+QUEUE: P5(4) 
+
+T23:
+CPU: P5(4)
+QUEUE: P1(6) 
+
+T24:
+CPU: P5(3)
+QUEUE: P1(6) 
+
+T25:
+CPU: P5(2)
+QUEUE: P1(6) 
+
+T26:
+CPU: P1(6)
+QUEUE: P5(1) 
+
+T27:
+CPU: P1(5)
+QUEUE: P5(1) 
+
+T28:
+CPU: P1(4)
+QUEUE: P5(1) 
+
+T29:
+CPU: P5(1)
+QUEUE: P1(3) 
+
+T30:
+CPU: P1(3)
+QUEUE: <empty>
+
+T31:
+CPU: P1(2)
+QUEUE: <empty>
+
+T32:
+CPU: P1(1)
+QUEUE: <empty>
+
+Process P1 Wait Time: 18.00
+Process P2 Wait Time: 9.00
+Process P3 Wait Time: 4.00
+Process P4 Wait Time: 5.00
+Process P5 Wait Time: 16.00
+Average Wait Time: 10.40
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab6[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab6[00m$ bin/cpuSchedulerA input/in-RR.txt [K[K[K[K[K[K[K[K[K[Ktesting-rr5.txt 
+[?2004lReading input from file input/testing-rr5.txts.
+
+
+ALGORITHM: RR  5
+
+PROCESSES:
+
+Name    	Entry	Burst
+P1      	  0   	 23   
+P2      	  3   	  6   
+P3      	  4   	  7   
+P4      	  5   	  2   
+P5      	  7   	  9   
+P6      	  9   	  3   
+P7      	 11   	  2   
+P8      	 13   	  3   
+P9      	 15   	  5   
+P10     	 18   	  2   
+
+SIMULATION:
+
+T0:
+CPU: P1(23)
+QUEUE: <empty>
+
+T1:
+CPU: P1(22)
+QUEUE: <empty>
+
+T2:
+CPU: P1(21)
+QUEUE: <empty>
+
+T3:
+CPU: P1(20)
+QUEUE: P2(6) 
+
+T4:
+CPU: P1(19)
+QUEUE: P2(6) P3(7) 
+
+T5:
+CPU: P2(6)
+QUEUE: P3(7) P4(2) P1(18) 
+
+T6:
+CPU: P2(5)
+QUEUE: P3(7) P4(2) P1(18) 
+
+T7:
+CPU: P2(4)
+QUEUE: P3(7) P4(2) P1(18) P5(9) 
+
+T8:
+CPU: P2(3)
+QUEUE: P3(7) P4(2) P1(18) P5(9) 
+
+T9:
+CPU: P2(2)
+QUEUE: P3(7) P4(2) P1(18) P5(9) P6(3) 
+
+T10:
+CPU: P3(7)
+QUEUE: P4(2) P1(18) P5(9) P6(3) P2(1) 
+
+T11:
+CPU: P3(6)
+QUEUE: P4(2) P1(18) P5(9) P6(3) P2(1) P7(2) 
+
+T12:
+CPU: P3(5)
+QUEUE: P4(2) P1(18) P5(9) P6(3) P2(1) P7(2) 
+
+T13:
+CPU: P3(4)
+QUEUE: P4(2) P1(18) P5(9) P6(3) P2(1) P7(2) P8(3) 
+
+T14:
+CPU: P3(3)
+QUEUE: P4(2) P1(18) P5(9) P6(3) P2(1) P7(2) P8(3) 
+
+T15:
+CPU: P4(2)
+QUEUE: P1(18) P5(9) P6(3) P2(1) P7(2) P8(3) P9(5) P3(2) 
+
+T16:
+CPU: P4(1)
+QUEUE: P1(18) P5(9) P6(3) P2(1) P7(2) P8(3) P9(5) P3(2) 
+
+T17:
+CPU: P1(18)
+QUEUE: P5(9) P6(3) P2(1) P7(2) P8(3) P9(5) P3(2) 
+
+T18:
+CPU: P1(17)
+QUEUE: P5(9) P6(3) P2(1) P7(2) P8(3) P9(5) P3(2) P10(2) 
+
+T19:
+CPU: P1(16)
+QUEUE: P5(9) P6(3) P2(1) P7(2) P8(3) P9(5) P3(2) P10(2) 
+
+T20:
+CPU: P1(15)
+QUEUE: P5(9) P6(3) P2(1) P7(2) P8(3) P9(5) P3(2) P10(2) 
+
+T21:
+CPU: P1(14)
+QUEUE: P5(9) P6(3) P2(1) P7(2) P8(3) P9(5) P3(2) P10(2) 
+
+T22:
+CPU: P5(9)
+QUEUE: P6(3) P2(1) P7(2) P8(3) P9(5) P3(2) P10(2) P1(13) 
+
+T23:
+CPU: P5(8)
+QUEUE: P6(3) P2(1) P7(2) P8(3) P9(5) P3(2) P10(2) P1(13) 
+
+T24:
+CPU: P5(7)
+QUEUE: P6(3) P2(1) P7(2) P8(3) P9(5) P3(2) P10(2) P1(13) 
+
+T25:
+CPU: P5(6)
+QUEUE: P6(3) P2(1) P7(2) P8(3) P9(5) P3(2) P10(2) P1(13) 
+
+T26:
+CPU: P5(5)
+QUEUE: P6(3) P2(1) P7(2) P8(3) P9(5) P3(2) P10(2) P1(13) 
+
+T27:
+CPU: P6(3)
+QUEUE: P2(1) P7(2) P8(3) P9(5) P3(2) P10(2) P1(13) P5(4) 
+
+T28:
+CPU: P6(2)
+QUEUE: P2(1) P7(2) P8(3) P9(5) P3(2) P10(2) P1(13) P5(4) 
+
+T29:
+CPU: P6(1)
+QUEUE: P2(1) P7(2) P8(3) P9(5) P3(2) P10(2) P1(13) P5(4) 
+
+T30:
+CPU: P2(1)
+QUEUE: P7(2) P8(3) P9(5) P3(2) P10(2) P1(13) P5(4) 
+
+T31:
+CPU: P7(2)
+QUEUE: P8(3) P9(5) P3(2) P10(2) P1(13) P5(4) 
+
+T32:
+CPU: P7(1)
+QUEUE: P8(3) P9(5) P3(2) P10(2) P1(13) P5(4) 
+
+T33:
+CPU: P8(3)
+QUEUE: P9(5) P3(2) P10(2) P1(13) P5(4) 
+
+T34:
+CPU: P8(2)
+QUEUE: P9(5) P3(2) P10(2) P1(13) P5(4) 
+
+T35:
+CPU: P8(1)
+QUEUE: P9(5) P3(2) P10(2) P1(13) P5(4) 
+
+T36:
+CPU: P9(5)
+QUEUE: P3(2) P10(2) P1(13) P5(4) 
+
+T37:
+CPU: P9(4)
+QUEUE: P3(2) P10(2) P1(13) P5(4) 
+
+T38:
+CPU: P9(3)
+QUEUE: P3(2) P10(2) P1(13) P5(4) 
+
+T39:
+CPU: P9(2)
+QUEUE: P3(2) P10(2) P1(13) P5(4) 
+
+T40:
+CPU: P9(1)
+QUEUE: P3(2) P10(2) P1(13) P5(4) 
+
+T41:
+CPU: P3(2)
+QUEUE: P10(2) P1(13) P5(4) 
+
+T42:
+CPU: P3(1)
+QUEUE: P10(2) P1(13) P5(4) 
+
+T43:
+CPU: P10(2)
+QUEUE: P1(13) P5(4) 
+
+T44:
+CPU: P10(1)
+QUEUE: P1(13) P5(4) 
+
+T45:
+CPU: P1(13)
+QUEUE: P5(4) 
+
+T46:
+CPU: P1(12)
+QUEUE: P5(4) 
+
+T47:
+CPU: P1(11)
+QUEUE: P5(4) 
+
+T48:
+CPU: P1(10)
+QUEUE: P5(4) 
+
+T49:
+CPU: P1(9)
+QUEUE: P5(4) 
+
+T50:
+CPU: P5(4)
+QUEUE: P1(8) 
+
+T51:
+CPU: P5(3)
+QUEUE: P1(8) 
+
+T52:
+CPU: P5(2)
+QUEUE: P1(8) 
+
+T53:
+CPU: P5(1)
+QUEUE: P1(8) 
+
+T54:
+CPU: P1(8)
+QUEUE: <empty>
+
+T55:
+CPU: P1(7)
+QUEUE: <empty>
+
+T56:
+CPU: P1(6)
+QUEUE: <empty>
+
+T57:
+CPU: P1(5)
+QUEUE: <empty>
+
+T58:
+CPU: P1(4)
+QUEUE: <empty>
+
+T59:
+CPU: P1(3)
+QUEUE: <empty>
+
+T60:
+CPU: P1(2)
+QUEUE: <empty>
+
+T61:
+CPU: P1(1)
+QUEUE: <empty>
+
+Process P1 Wait Time: 39.00
+Process P2 Wait Time: 22.00
+Process P3 Wait Time: 32.00
+Process P4 Wait Time: 10.00
+Process P5 Wait Time: 38.00
+Process P6 Wait Time: 18.00
+Process P7 Wait Time: 20.00
+Process P8 Wait Time: 20.00
+Process P9 Wait Time: 21.00
+Process P10 Wait Time: 25.00
+Average Wait Time: 24.50
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab6[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab6[00m$ exit
+[?2004lexit
+
+Script done on 2023-03-09 16:21:29+00:00 [COMMAND_EXIT_CODE="0"]
