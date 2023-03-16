@@ -1,0 +1,9 @@
+/home/lars/comp362/lab7/task1/CMakeFiles/buffer.dir
+/home/lars/comp362/lab7/task1/CMakeFiles/semaphore.dir
+/home/lars/comp362/lab7/task1/CMakeFiles/mutex.dir
+/home/lars/comp362/lab7/task1/CMakeFiles/mutex_spinlock.dir
+/home/lars/comp362/lab7/task1/CMakeFiles/barrier.dir
+/home/lars/comp362/lab7/task1/CMakeFiles/readwrite.dir
+/home/lars/comp362/lab7/task1/CMakeFiles/condvar.dir
+/home/lars/comp362/lab7/task1/CMakeFiles/edit_cache.dir
+/home/lars/comp362/lab7/task1/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,13 @@
+function() {
+   wait(monitor_mutex); i.e. pthread_lock(monitor_mutex)
+
+      ...
+
+   // body of the function
+
+      ...
+
+   signal(monitor_mutex); i.e. pthread_unlock(monitor_mutex)
+
+}
+

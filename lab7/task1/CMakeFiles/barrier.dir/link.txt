@@ -1,0 +1,1 @@
+/usr/bin/cc  -D_FILE_OFFSET_BITS=64 -g -Wall --pedantic -g -O0 -D_DEBUG CMakeFiles/barrier.dir/barrier.c.o -o bin/barrier 

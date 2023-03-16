@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/lars/comp362/lab7/task3",
+  "command": "/usr/bin/cc    -D_FILE_OFFSET_BITS=64 -g -Wall --pedantic -g -O0 -D_DEBUG -std=gnu11 -o CMakeFiles/philosophers.dir/philoWithMonitor.c.o -c /home/lars/comp362/lab7/task3/philoWithMonitor.c",
+  "file": "/home/lars/comp362/lab7/task3/philoWithMonitor.c"
+}
+]

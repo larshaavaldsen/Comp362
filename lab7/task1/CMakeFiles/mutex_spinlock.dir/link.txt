@@ -1,0 +1,1 @@
+/usr/bin/cc  -D_FILE_OFFSET_BITS=64 -g -Wall --pedantic -g -O0 -D_DEBUG CMakeFiles/mutex_spinlock.dir/mutex_spinlock.c.o -o bin/mutex_spinlock 

@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/home/lars/comp362/lab7/task1",
+  "command": "/usr/bin/cc  -I/home/lars/comp362/lab7/task1  -D_FILE_OFFSET_BITS=64 -g -Wall --pedantic -g -O0 -D_DEBUG -std=gnu11 -o CMakeFiles/buffer.dir/buffer.c.o -c /home/lars/comp362/lab7/task1/buffer.c",
+  "file": "/home/lars/comp362/lab7/task1/buffer.c"
+},
+{
+  "directory": "/home/lars/comp362/lab7/task1",
+  "command": "/usr/bin/cc  -I/home/lars/comp362/lab7/task1  -D_FILE_OFFSET_BITS=64 -g -Wall --pedantic -g -O0 -D_DEBUG -std=gnu11 -o CMakeFiles/semaphore.dir/semaphore.c.o -c /home/lars/comp362/lab7/task1/semaphore.c",
+  "file": "/home/lars/comp362/lab7/task1/semaphore.c"
+},
+{
+  "directory": "/home/lars/comp362/lab7/task1",
+  "command": "/usr/bin/cc  -I/home/lars/comp362/lab7/task1  -D_FILE_OFFSET_BITS=64 -g -Wall --pedantic -g -O0 -D_DEBUG -std=gnu11 -o CMakeFiles/mutex.dir/mutex.c.o -c /home/lars/comp362/lab7/task1/mutex.c",
+  "file": "/home/lars/comp362/lab7/task1/mutex.c"
+},
+{
+  "directory": "/home/lars/comp362/lab7/task1",
+  "command": "/usr/bin/cc  -I/home/lars/comp362/lab7/task1  -D_FILE_OFFSET_BITS=64 -g -Wall --pedantic -g -O0 -D_DEBUG -std=gnu11 -o CMakeFiles/mutex_spinlock.dir/mutex_spinlock.c.o -c /home/lars/comp362/lab7/task1/mutex_spinlock.c",
+  "file": "/home/lars/comp362/lab7/task1/mutex_spinlock.c"
+},
+{
+  "directory": "/home/lars/comp362/lab7/task1",
+  "command": "/usr/bin/cc  -I/home/lars/comp362/lab7/task1  -D_FILE_OFFSET_BITS=64 -g -Wall --pedantic -g -O0 -D_DEBUG -std=gnu11 -o CMakeFiles/barrier.dir/barrier.c.o -c /home/lars/comp362/lab7/task1/barrier.c",
+  "file": "/home/lars/comp362/lab7/task1/barrier.c"
+},
+{
+  "directory": "/home/lars/comp362/lab7/task1",
+  "command": "/usr/bin/cc  -I/home/lars/comp362/lab7/task1  -D_FILE_OFFSET_BITS=64 -g -Wall --pedantic -g -O0 -D_DEBUG -std=gnu11 -o CMakeFiles/readwrite.dir/readwrite.c.o -c /home/lars/comp362/lab7/task1/readwrite.c",
+  "file": "/home/lars/comp362/lab7/task1/readwrite.c"
+},
+{
+  "directory": "/home/lars/comp362/lab7/task1",
+  "command": "/usr/bin/cc  -I/home/lars/comp362/lab7/task1  -D_FILE_OFFSET_BITS=64 -g -Wall --pedantic -g -O0 -D_DEBUG -std=gnu11 -o CMakeFiles/condvar.dir/condvar.c.o -c /home/lars/comp362/lab7/task1/condvar.c",
+  "file": "/home/lars/comp362/lab7/task1/condvar.c"
+}
+]
