@@ -1,0 +1,207 @@
+Script started on 2023-03-16 17:56:41+00:00 [TERM="xterm-256color" TTY="/dev/pts/11" COLUMNS="161" LINES="15"]
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab7/task3[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab7/task3[00m$ ./philosophers 3 [K[K5 2
+[?2004lStart a dinner for 5 diners
+Philsopher no. 0 sits at the table.
+Philsopher no. 1 sits at the table.
+Philsopher no. 3 sits at the table.
+Philsopher no. 2 sits at the table.
+Philsopher no. 4 sits at the table.
+philo 3 is eating!
+thread 4 waitingphilo 0 is eating!
+philo 3 is eating!
+>>>>>> Philsopher no. 3 finished meal. <<<<<<
+thread 0 waitingphilo 4 is eating!
+philo 1 is eating!
+philo 4 is eating!
+thread 2 waitingthread 1 waitingphilo 2 is eating!
+>>>>>> Philsopher no. 4 finished meal. <<<<<<
+philo 2 is eating!
+philo 0 is eating!
+>>>>>> Philsopher no. 2 finished meal. <<<<<<
+philo 1 is eating!
+>>>>>> Philsopher no. 0 finished meal. <<<<<<
+>>>>>> Philsopher no. 1 finished meal. <<<<<<
+Dinner is no more.
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab7/task3[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab7/task3[00m$ ./philosophers 5 2[K[K[K8 1 [K[K20
+[?2004lStart a dinner for 8 diners
+Philsopher no. 0 sits at the table.
+Philsopher no. 3 sits at the table.
+Philsopher no. 2 sits at the table.
+Philsopher no. 5 sits at the table.
+Philsopher no. 4 sits at the table.
+Philsopher no. 6 sits at the table.
+Philsopher no. 7 sits at the table.
+Philsopher no. 1 sits at the table.
+philo 2 is eating!
+philo 4 is eating!
+philo 0 is eating!
+philo 2 is eating!
+philo 4 is eating!
+thread 1 waitingphilo 0 is eating!
+philo 2 is eating!
+philo 4 is eating!
+philo 0 is eating!
+philo 2 is eating!
+philo 4 is eating!
+philo 6 is eating!
+philo 0 is eating!
+philo 2 is eating!
+philo 6 is eating!
+philo 4 is eating!
+philo 0 is eating!
+thread 3 waitingphilo 2 is eating!
+thread 7 waitingphilo 6 is eating!
+philo 4 is eating!
+philo 2 is eating!
+philo 0 is eating!
+philo 6 is eating!
+philo 4 is eating!
+thread 5 waitingphilo 2 is eating!
+philo 0 is eating!
+philo 6 is eating!
+philo 4 is eating!
+philo 2 is eating!
+philo 0 is eating!
+philo 6 is eating!
+philo 4 is eating!
+philo 2 is eating!
+philo 6 is eating!
+philo 4 is eating!
+philo 2 is eating!
+philo 0 is eating!
+philo 6 is eating!
+philo 4 is eating!
+philo 2 is eating!
+philo 0 is eating!
+philo 6 is eating!
+philo 4 is eating!
+philo 6 is eating!
+philo 2 is eating!
+philo 4 is eating!
+philo 6 is eating!
+philo 4 is eating!
+philo 2 is eating!
+philo 6 is eating!
+philo 0 is eating!
+philo 4 is eating!
+philo 2 is eating!
+philo 6 is eating!
+philo 4 is eating!
+philo 0 is eating!
+philo 2 is eating!
+philo 6 is eating!
+philo 4 is eating!
+philo 0 is eating!
+philo 2 is eating!
+philo 6 is eating!
+philo 4 is eating!
+philo 0 is eating!
+philo 2 is eating!
+philo 6 is eating!
+philo 4 is eating!
+philo 2 is eating!
+philo 0 is eating!
+philo 6 is eating!
+philo 4 is eating!
+philo 2 is eating!
+philo 0 is eating!
+philo 6 is eating!
+>>>>>> Philsopher no. 4 finished meal. <<<<<<
+>>>>>> Philsopher no. 2 finished meal. <<<<<<
+philo 3 is eating!
+thread 0 waitingthread 6 waitingphilo 5 is eating!
+philo 1 is eating!
+philo 3 is eating!
+philo 5 is eating!
+philo 1 is eating!
+philo 7 is eating!
+philo 3 is eating!
+philo 5 is eating!
+philo 1 is eating!
+philo 3 is eating!
+philo 7 is eating!
+philo 5 is eating!
+philo 1 is eating!
+philo 7 is eating!
+philo 3 is eating!
+philo 5 is eating!
+philo 1 is eating!
+philo 7 is eating!
+philo 3 is eating!
+philo 5 is eating!
+philo 1 is eating!
+philo 7 is eating!
+philo 3 is eating!
+philo 5 is eating!
+philo 1 is eating!
+philo 7 is eating!
+philo 3 is eating!
+philo 5 is eating!
+philo 1 is eating!
+philo 7 is eating!
+philo 3 is eating!
+philo 5 is eating!
+philo 1 is eating!
+philo 3 is eating!
+philo 5 is eating!
+philo 1 is eating!
+philo 7 is eating!
+philo 3 is eating!
+philo 5 is eating!
+philo 1 is eating!
+philo 7 is eating!
+philo 3 is eating!
+philo 5 is eating!
+philo 1 is eating!
+philo 7 is eating!
+philo 3 is eating!
+philo 5 is eating!
+philo 1 is eating!
+philo 3 is eating!
+philo 7 is eating!
+philo 5 is eating!
+philo 1 is eating!
+philo 3 is eating!
+philo 7 is eating!
+philo 5 is eating!
+philo 1 is eating!
+philo 3 is eating!
+philo 5 is eating!
+philo 1 is eating!
+philo 7 is eating!
+philo 3 is eating!
+philo 5 is eating!
+philo 1 is eating!
+philo 7 is eating!
+philo 3 is eating!
+philo 5 is eating!
+philo 1 is eating!
+philo 7 is eating!
+philo 3 is eating!
+philo 5 is eating!
+philo 1 is eating!
+philo 7 is eating!
+philo 3 is eating!
+philo 5 is eating!
+philo 1 is eating!
+philo 7 is eating!
+>>>>>> Philsopher no. 3 finished meal. <<<<<<
+>>>>>> Philsopher no. 5 finished meal. <<<<<<
+>>>>>> Philsopher no. 1 finished meal. <<<<<<
+thread 7 waitingphilo 6 is eating!
+philo 0 is eating!
+philo 6 is eating!
+philo 0 is eating!
+philo 0 is eating!
+>>>>>> Philsopher no. 6 finished meal. <<<<<<
+thread 0 waitingphilo 7 is eating!
+thread 7 waitingphilo 0 is eating!
+>>>>>> Philsopher no. 0 finished meal. <<<<<<
+philo 7 is eating!
+philo 7 is eating!
+>>>>>> Philsopher no. 7 finished meal. <<<<<<
+Dinner is no more.
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab7/task3[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab7/task3[00m$ exit
+[?2004lexit
+
+Script done on 2023-03-16 17:57:19+00:00 [COMMAND_EXIT_CODE="0"]

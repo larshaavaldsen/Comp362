@@ -1,0 +1,37 @@
+Script started on 2023-03-16 17:43:42+00:00 [TERM="xterm-256color" TTY="/dev/pts/9" COLUMNS="161" LINES="15"]
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab7/task1/bin[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab7/task1/bin[00m$ ./readwrite 2 2 2 2[K1 1
+[?2004lReader 7f9d3766e640 started.
+Reader 7f9d3766e640 reads count 0.
+Reader 7f9d3766e640 reads count 0.
+Reader 7f9d3766e640 reads count 0.
+Reader 7f9d3766e640 reads count 0.
+Reader 7f9d3766e640 reads count 0.
+Reader 7f9d3766e640 reads count 0.
+Reader 7f9d3766e640 reads count 0.
+Reader 7f9d3766e640 reads count 0.
+Reader 7f9d3766e640 reads count 0.
+Reader 7f9d3766e640 reads count 0.
+Reader 7f9d3766e640 reads count 0.
+Reader 7f9d3766e640 reads count 0.
+Reader 7f9d3766e640 reads count 0.
+Reader 7f9d3766e640 reads count 0.
+Reader 7f9d36e6d640 started.
+Reader 7f9d36e6d640 reads count 0.
+Reader 7f9d3766e640 reads count 0.
+Floating point exception (core dumped)
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab7/task1/bin[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab7/task1/bin[00m$ ./readwrite 2 2 2 1 1[K[K[K[K[K[K[K3 2 1 1
+[?2004lReader 7f73866b7640 started.
+Reader 7f73866b7640 reads count 0.
+Reader 7f7385eb6640 started.
+Reader 7f73866b7640 reads count 0.
+Reader 7f7385eb6640 reads count 0.
+Reader 7f73856b5640 started.
+Reader 7f73866b7640 reads count 0.
+Reader 7f73856b5640 reads count 0.
+Reader 7f73866b7640 reads count 0.
+Reader 7f73856b5640 reads count 0.
+Floating point exception (core dumped)
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab7/task1/bin[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab7/task1/bin[00m$ exit
+[?2004lexit
+
+Script done on 2023-03-16 17:44:02+00:00 [COMMAND_EXIT_CODE="136"]

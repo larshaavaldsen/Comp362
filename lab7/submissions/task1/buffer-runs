@@ -1,0 +1,46 @@
+Script started on 2023-03-16 17:40:20+00:00 [TERM="xterm-256color" TTY="/dev/pts/9" COLUMNS="161" LINES="15"]
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab7/task1/bin[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab7/task1/bin[00m$ ./buffer [K 2[K3 4 4 10 2 2
+[?2004lProducer 7ff1453ab640 produced 1326816917 to slot 1 
+Consumer 7ff143ba8640 consumed 1326816917 from slot 1 
+Producer 7ff1453ab640 produced 1023799245 to slot 2 
+Consumer 7ff1433a7640 consumed 1023799245 from slot 2 
+Producer 7ff1453ab640 produced 1918652330 to slot 3 
+Consumer 7ff143ba8640 consumed 1918652330 from slot 3 
+Producer 7ff1453ab640 produced 1440098383 to slot 4 
+Consumer 7ff143ba8640 consumed 1440098383 from slot 4 
+Producer 7ff1453ab640 produced 1555272549 to slot 5 
+Consumer 7ff142ba6640 consumed 1555272549 from slot 5 
+Producer 7ff1463ad640 produced 470334373 to slot 6 
+Producer 7ff145bac640 produced 490283880 to slot 7 
+Producer 7ff144baa640 produced 957041329 to slot 8 
+Consumer 7ff1443a9640 consumed 470334373 from slot 6 
+Producer 7ff145bac640 produced 391217101 to slot 9 
+Consumer 7ff1443a9640 consumed 490283880 from slot 7 
+Consumer 7ff1433a7640 consumed 957041329 from slot 8 
+Consumer 7ff143ba8640 consumed 391217101 from slot 9 
+Producer 7ff1453ab640 produced 1356007225 to slot 0 
+Consumer 7ff143ba8640 consumed 1356007225 from slot 0 
+Producer 7ff1463ad640 produced 1253792433 to slot 1 
+Consumer 7ff143ba8640 consumed 1253792433 from slot 1 
+Producer 7ff144baa640 produced 1174219783 to slot 2 
+Producer 7ff1463ad640 produced 616359378 to slot 3 
+Consumer 7ff142ba6640 consumed 1174219783 from slot 2 
+Producer 7ff145bac640 produced 1139405002 to slot 4 
+Consumer 7ff143ba8640 consumed 616359378 from slot 3 
+Producer 7ff144baa640 produced 1715227676 to slot 5 
+Consumer 7ff142ba6640 consumed 1139405002 from slot 4 
+Producer 7ff1463ad640 produced 1248572754 to slot 6 
+Producer 7ff1453ab640 produced 669591346 to slot 7 
+Consumer 7ff1443a9640 consumed 1715227676 from slot 5 
+Consumer 7ff1433a7640 consumed 1248572754 from slot 6 
+Producer 7ff1453ab640 produced 398837303 to slot 8 
+Consumer 7ff1443a9640 consumed 669591346 from slot 7 
+Producer 7ff1463ad640 produced 790054404 to slot 9 
+Consumer 7ff143ba8640 consumed 398837303 from slot 8 
+Consumer 7ff1443a9640 consumed 790054404 from slot 9 
+Producer 7ff1463ad640 produced 1029390732 to slot 0 
+Consumer 7ff143ba8640 consumed 1029390732 from slot 0 
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab7/task1/bin[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab7/task1/bin[00m$ exit
+[?2004lexit
+
+Script done on 2023-03-16 17:40:45+00:00 [COMMAND_EXIT_CODE="0"]

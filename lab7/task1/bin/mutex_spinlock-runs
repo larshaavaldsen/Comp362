@@ -1,0 +1,13 @@
+Script started on 2023-03-16 17:43:03+00:00 [TERM="xterm-256color" TTY="/dev/pts/9" COLUMNS="161" LINES="15"]
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab7/task1/bin[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab7/task1/bin[00m$ exit./mutex 3 3 1exit[K[K,./[K[K[K./mutex_spinlock 2 32 [K[K 2[K1
+[?2004lmutex locks...
+Bee 139919837951552 created
+Bee 139919829558848 created
+This 139919829558848 bee is bzziing for 0 seconds :-)
+This 139919829558848 bee is bzziing for 0 seconds :-)
+This 139919837951552 bee is bzziing for 0 seconds :-)
+This 139919837951552 bee is bzziing for 0 seconds :-)
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab7/task1/bin[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab7/task1/bin[00m$ exx[Kit
+[?2004lexit
+
+Script done on 2023-03-16 17:43:17+00:00 [COMMAND_EXIT_CODE="0"]

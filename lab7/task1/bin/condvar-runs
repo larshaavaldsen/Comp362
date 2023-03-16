@@ -1,0 +1,14 @@
+Script started on 2023-03-16 17:41:43+00:00 [TERM="xterm-256color" TTY="/dev/pts/9" COLUMNS="161" LINES="15"]
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab7/task1/bin[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab7/task1/bin[00m$ exit./condvar 1 1 1 12 3[C[C[C[C[K[K[K3[K[K[K[K[K5 5 1 [K[K2 [K[K1 1
+[?2004lWatcher ae32f640: started.
+Watcher ae32f640: waiting for a signal.
+Counter ad32d640:  started with count limit of 0.
+Counter adb2e640:  started with count limit of 0.
+Counter acb2c640:  started with count limit of 0.
+Counter a7fff640:  started with count limit of 0.
+
+^C
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab7/task1/bin[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab7/task1/bin[00m$ exit
+[?2004lexit
+
+Script done on 2023-03-16 17:42:09+00:00 [COMMAND_EXIT_CODE="130"]

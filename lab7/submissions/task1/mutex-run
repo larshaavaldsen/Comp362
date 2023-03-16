@@ -1,0 +1,16 @@
+Script started on 2023-03-16 17:42:26+00:00 [TERM="xterm-256color" TTY="/dev/pts/9" COLUMNS="161" LINES="15"]
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab7/task1/bin[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab7/task1/bin[00m$ exit./condvar 5 5 1 1exit[K./condvar 5 5 1 1exit[K[K./mutex 3 3
+[?2004lUsage: mutex numberOfBees maxIterations sleepCeiling
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab7/task1/bin[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab7/task1/bin[00m$ ./mutex 3 3 1
+[?2004lBee 94640686330528 created
+Bee 94640686330536 created
+Bee 94640686330544 created
+This 140046085953088 bee is bzziing for 0 seconds :-)
+This 140046077560384 bee is bzziing for 0 seconds :-)
+This 140046085953088 bee is bzziing for 0 seconds :-)
+This 140046069167680 bee is bzziing for 0 seconds :-)
+This 140046069167680 bee is bzziing for 0 seconds :-)
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab7/task1/bin[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab7/task1/bin[00m$ exit
+[?2004lexit
+
+Script done on 2023-03-16 17:42:40+00:00 [COMMAND_EXIT_CODE="0"]
