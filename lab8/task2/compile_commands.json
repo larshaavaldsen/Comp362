@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/lars/comp362/lab8/task2",
+  "command": "/usr/bin/cc    -D_FILE_OFFSET_BITS=64 -g -Wall --pedantic -g -O0 -D_DEBUG -std=gnu11 -o CMakeFiles/solvency.dir/src/arrays.c.o -c /home/lars/comp362/lab8/task2/src/arrays.c",
+  "file": "/home/lars/comp362/lab8/task2/src/arrays.c"
+},
+{
+  "directory": "/home/lars/comp362/lab8/task2",
+  "command": "/usr/bin/cc    -D_FILE_OFFSET_BITS=64 -g -Wall --pedantic -g -O0 -D_DEBUG -std=gnu11 -o CMakeFiles/solvency.dir/src/bank.c.o -c /home/lars/comp362/lab8/task2/src/bank.c",
+  "file": "/home/lars/comp362/lab8/task2/src/bank.c"
+},
+{
+  "directory": "/home/lars/comp362/lab8/task2",
+  "command": "/usr/bin/cc    -D_FILE_OFFSET_BITS=64 -g -Wall --pedantic -g -O0 -D_DEBUG -std=gnu11 -o CMakeFiles/solvency.dir/src/solvency.c.o -c /home/lars/comp362/lab8/task2/src/solvency.c",
+  "file": "/home/lars/comp362/lab8/task2/src/solvency.c"
+}
+]

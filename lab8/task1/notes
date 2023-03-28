@@ -1,0 +1,15 @@
+func detectDeadlocks()
+    mark processed
+    create process
+    set process->next to wait for list set name to name
+
+    have we visited?
+        if yes cycle, print cycle
+
+    mark visited
+
+    for each node in row 
+        if it is 1
+            call this function again BREAK INSTEAD
+
+mark unvisited

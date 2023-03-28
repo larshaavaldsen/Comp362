@@ -1,0 +1,3 @@
+/home/lars/comp362/lab8/task2/CMakeFiles/solvency.dir
+/home/lars/comp362/lab8/task2/CMakeFiles/edit_cache.dir
+/home/lars/comp362/lab8/task2/CMakeFiles/rebuild_cache.dir
