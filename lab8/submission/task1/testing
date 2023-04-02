@@ -1,0 +1,18 @@
+Script started on 2023-03-31 18:46:28+00:00 [TERM="xterm-256color" TTY="/dev/pts/26" COLUMNS="321" LINES="15"]
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab8/task1[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab8/task1[00m$ exitbin/deadlock in.txt 
+[?2004lVERTICES: V={Aa, Bbb, Cccc, Ddddd}
+EDGES: E={{Aa, Cccc}, {Aa, Ddddd}, {Bbb, Cccc}, {Cccc, Bbb}, {Cccc, Ddddd}, {Ddddd, Aa}, {Ddddd, Cccc}}
+ 0  0  1  1 
+ 0  0  1  0 
+ 0  1  0  1 
+ 1  0  1  0 
+The following deadlock was found!:  Cccc  Bbb  Cccc  Aa 
+The following deadlock was found!:  Aa  Ddddd  Cccc  Aa 
+The following deadlock was found!:  Cccc  Ddddd  Cccc  Aa 
+The following deadlock was found!:  Aa  Ddddd  Aa 
+The following deadlock was found!:  Cccc  Bbb  Cccc  Ddddd  Aa 
+The following deadlock was found!:  Ddddd  Cccc  Ddddd  Aa 
+[?2004h]0;lars@racknerd-9457be: ~/comp362/lab8/task1[01;32mlars@racknerd-9457be[00m:[01;34m~/comp362/lab8/task1[00m$ exit
+[?2004lexit
+
+Script done on 2023-03-31 18:46:34+00:00 [COMMAND_EXIT_CODE="0"]
