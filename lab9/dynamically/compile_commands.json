@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/lars/comp362/lab9/dynamically",
+  "command": "/usr/bin/cc -Dinverted_EXPORTS   -D_FILE_OFFSET_BITS=64 -g -Wall --pedantic -g -O0 -D_DEBUG -fPIC -std=gnu11 -o CMakeFiles/inverted.dir/src/inverted.c.o -c /home/lars/comp362/lab9/dynamically/src/inverted.c",
+  "file": "/home/lars/comp362/lab9/dynamically/src/inverted.c"
+},
+{
+  "directory": "/home/lars/comp362/lab9/dynamically",
+  "command": "/usr/bin/cc    -D_FILE_OFFSET_BITS=64 -g -Wall --pedantic -g -O0 -D_DEBUG -std=gnu11 -o CMakeFiles/testInverted.dir/src/testInverted.c.o -c /home/lars/comp362/lab9/dynamically/src/testInverted.c",
+  "file": "/home/lars/comp362/lab9/dynamically/src/testInverted.c"
+}
+]

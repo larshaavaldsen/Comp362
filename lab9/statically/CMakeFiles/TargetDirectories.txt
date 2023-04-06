@@ -1,0 +1,4 @@
+/home/lars/comp362/lab9/statically/CMakeFiles/inverted.dir
+/home/lars/comp362/lab9/statically/CMakeFiles/testInverted.dir
+/home/lars/comp362/lab9/statically/CMakeFiles/edit_cache.dir
+/home/lars/comp362/lab9/statically/CMakeFiles/rebuild_cache.dir

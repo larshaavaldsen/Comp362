@@ -13,10 +13,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS 1)
 
 set(CMAKE_BUILD_TYPE Debug)
 
-add_library(inverted STATIC src/inverted.c)
+add_library(inverted SHARED src/inverted.c)
 
 add_executable(testInverted src/testInverted.c)
 target_link_libraries(testInverted inverted)
-
-
-

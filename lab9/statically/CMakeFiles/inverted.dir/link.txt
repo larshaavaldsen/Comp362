@@ -1,0 +1,2 @@
+/usr/bin/ar qc lib/libinverted.a CMakeFiles/inverted.dir/src/inverted.c.o
+/usr/bin/ranlib lib/libinverted.a

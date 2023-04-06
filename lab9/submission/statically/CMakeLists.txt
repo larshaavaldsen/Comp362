@@ -13,9 +13,10 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS 1)
 
 set(CMAKE_BUILD_TYPE Debug)
 
-include_directories(inc)
+add_library(inverted STATIC src/inverted.c)
 
-add_executable(inverted src/inverted.c src/testInverted.c)
+add_executable(testInverted src/testInverted.c)
+target_link_libraries(testInverted inverted)
 
 
 

@@ -1,0 +1,5 @@
+Statically linked:
+gcc -c src/inverted.c -o inverted.o
+ar rcs inverted.a inverted.o
+nm inverted.a
+gcc src/testInverted.c -L. inverted.a -o testInverted

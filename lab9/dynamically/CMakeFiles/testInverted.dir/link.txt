@@ -1,0 +1,1 @@
+/usr/bin/cc  -D_FILE_OFFSET_BITS=64 -g -Wall --pedantic -g -O0 -D_DEBUG CMakeFiles/testInverted.dir/src/testInverted.c.o -o bin/testInverted  -Wl,-rpath,/home/lars/comp362/lab9/dynamically/lib lib/libinverted.so 
