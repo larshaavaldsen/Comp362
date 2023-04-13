@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/lars/comp362/lab10",
+  "command": "/usr/bin/cc    -D_FILE_OFFSET_BITS=64 -fcommon -g -Wall --pedantic -g -O0 -D_DEBUG -fcommon -std=gnu11 -o CMakeFiles/replaceList.dir/src/lruList.c.o -c /home/lars/comp362/lab10/src/lruList.c",
+  "file": "/home/lars/comp362/lab10/src/lruList.c"
+},
+{
+  "directory": "/home/lars/comp362/lab10",
+  "command": "/usr/bin/cc    -D_FILE_OFFSET_BITS=64 -fcommon -g -Wall --pedantic -g -O0 -D_DEBUG -fcommon -std=gnu11 -o CMakeFiles/replaceList.dir/src/optArray.c.o -c /home/lars/comp362/lab10/src/optArray.c",
+  "file": "/home/lars/comp362/lab10/src/optArray.c"
+},
+{
+  "directory": "/home/lars/comp362/lab10",
+  "command": "/usr/bin/cc    -D_FILE_OFFSET_BITS=64 -fcommon -g -Wall --pedantic -g -O0 -D_DEBUG -fcommon -std=gnu11 -o CMakeFiles/replaceList.dir/src/replace.c.o -c /home/lars/comp362/lab10/src/replace.c",
+  "file": "/home/lars/comp362/lab10/src/replace.c"
+}
+]

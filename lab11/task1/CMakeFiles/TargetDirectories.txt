@@ -1,0 +1,4 @@
+/home/lars/comp362/lab11/task1/CMakeFiles/disk.dir
+/home/lars/comp362/lab11/task1/CMakeFiles/disk_timer.dir
+/home/lars/comp362/lab11/task1/CMakeFiles/edit_cache.dir
+/home/lars/comp362/lab11/task1/CMakeFiles/rebuild_cache.dir

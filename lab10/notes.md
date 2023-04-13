@@ -40,7 +40,7 @@ testLRU() {
         searchLRU() // start with search
         displayLRU()
 }
-
+// fucked up psudeocode thats not completely right mostly right
 void insertLRU(int pageNumber) {
     if searchLRU() is null {
         if pageTableSize < numberOfFramesPerProcess
