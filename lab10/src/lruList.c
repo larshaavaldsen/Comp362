@@ -1,14 +1,10 @@
 /**
  * This implements the LRU page-replacement algorithm.
  */
-/*
-
-TAKE CARE OF THE BOTTOM
-
-*/
 #include "../inc/lruList.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 int *referenceString;
 int refStringLength;
@@ -24,6 +20,7 @@ int nummberOfFaults = 0;
 
 int hitPageNumber = 0;
 
+bool noHit = false;
 /*
 Function to update least used frame
 */
@@ -44,9 +41,12 @@ int testLRU(int numOfFrames, int *refString, int refStrLen)
     
     for (int i = 0; i < refStrLen; i++) {
         insertLRU(refString[i]);
+        printf("%d -> ", refString[i]);
         displayLRU();
+        noHit = false;
     }
-    return 0;
+    freePageTableLRU();
+    return nummberOfFaults;
 }
 
 /*
@@ -57,6 +57,8 @@ void insertLRU(int pageNumber)
     FRAME *search = searchLRU(pageNumber);
 
     if (search == NULL) {
+        noHit = true;
+        nummberOfFaults++;
         FRAME *newFrame = malloc(sizeof(FRAME));
         newFrame->pageNumber = pageNumber;
         if (pageTableSize < numberOfFramesPerProcess) {
@@ -65,14 +67,13 @@ void insertLRU(int pageNumber)
                 newFrame->up = NULL;
                 pageTableTop = newFrame;
                 pageTableSize++;
-                updateLeast();
+                leastRecentlyUsed = pageTableTop;
             } else {
                 pageTableTop->up = newFrame;
                 newFrame->down = pageTableTop;
                 newFrame->up = NULL;
                 pageTableTop = newFrame;
                 pageTableSize++;
-                updateLeast();
             } 
         } else {
             leastRecentlyUsed->up->down = NULL;
@@ -87,11 +88,13 @@ void insertLRU(int pageNumber)
     // fix this this is where its broken
     // 3 cases top, bottom change where bottom is pointing to
     // anywhere else
+    hitPageNumber++;
     hitPageNumber = search->pageNumber;
-    if (search->pageNumber == pageTableTop->pageNumber) {
+    if (search->pageNumber == pageTableTop->pageNumber) { // case top
         return;
-    } else if (search->pageNumber == leastRecentlyUsed->pageNumber) {
-        search->up->down = NULL;
+    } else if (search->pageNumber == leastRecentlyUsed->pageNumber) { // case 
+        
+        (search->up)->down = NULL;
         search->up = NULL;
         pageTableTop->up = search;
         search->down = pageTableTop;
@@ -119,11 +122,13 @@ void insertLRU(int pageNumber)
 FRAME *searchLRU(int pageNumber)
 {
     FRAME *ret = NULL;
+    FRAME *next = pageTableTop;
     if (pageTableTop != NULL) {
-        for (FRAME *curr = pageTableTop; curr->down != NULL; curr = curr->down) {
-            if (curr->pageNumber == pageNumber) {
-                ret = curr;
+        while(next != NULL) {
+            if(pageNumber == next->pageNumber) {
+                return next;
             }
+            next = next->down;
         }
     }
     return  ret;
@@ -132,19 +137,21 @@ FRAME *searchLRU(int pageNumber)
 void displayLRU(void)
 {
     for (FRAME *curr = pageTableTop; curr != NULL; curr = curr->down) {
-        if(hitPageNumber == curr->pageNumber) {
-            printf(" %d> ", curr->pageNumber);
-        } else if (curr->pageNumber == leastRecentlyUsed->pageNumber) {
-            printf(" %d* ", curr->pageNumber);
-        } else {
             printf(" %d ", curr->pageNumber);
-        }
+            if(curr->pageNumber == pageTableTop->pageNumber && !noHit) {
+                printf("< ");
+            }
+    }
+    if (noHit) {
+        printf("*");
     }
     printf("\n");
 }
 
 void freePageTableLRU(void)
 {
-    // TODO: implement
+     for (FRAME *curr = pageTableTop; curr != NULL; curr = curr->down) {
+        free(curr);
+     }
 }
 

@@ -23,6 +23,9 @@ When we hit, move to top of the linked list, when we miss kick the bottom of the
 
 Make sure to keep track of bottom of list
 
+// ONLY PRINT STAR IF THERES A FAULT PRINTS OUT OF DISPLAY
+// LESS than if we get a hit
+
 ### lruList.h - 
 ```
 frame {

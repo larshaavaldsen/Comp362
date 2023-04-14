@@ -27,10 +27,20 @@ lba = ?
 formula = c * (head * sect) + h * sect + s
 i.e. 1 * (3 * 3) + 0 * 3 + 2 = 11
 
-chs to lba -
+lba to chs -
 c = lba/(head * sect)
 h = (lba/sect) % head
 s = lba % sect
 
 ```
 ## Task 1 -
+
+``` 
+chs2lba() and lba2chs() // same as formulas from above
+
+// lba = lba, 
+// # disk reads = size/SECT_SIZE
+readDisk(lba_t lba, unsigned int size, char **buffer) {
+
+}
+```

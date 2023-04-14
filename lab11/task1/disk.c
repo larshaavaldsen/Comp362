@@ -18,7 +18,9 @@ CIDEV_RET_CODE lba2chs(lba_t lba, chs_t *chs)
     if (lba >= MAX_LOGICAL_BLOCK)
         return CIDEV_ADDRESS_ERROR;
     
-    
+    chs->cyl = lba/(NUM_OF_HEADS * NUM_OF_SECTS);
+    chs->head = (lba/NUM_OF_SECTS) % NUM_OF_HEADS;
+    chs->sect = lba % NUM_OF_SECTS;
 
     return CIDEV_SUCCESS;
 }
@@ -31,7 +33,11 @@ CIDEV_RET_CODE lba2chs(lba_t lba, chs_t *chs)
 CIDEV_RET_CODE chs2lba(chs_t *chs, lba_t *lba)
 {
 // todo: implement
-    
+    if(chs->cyl >= NUM_OF_CYLS || chs->head >= NUM_OF_HEADS || chs->sect >= NUM_OF_SECTS)
+        return CIDEV_ADDRESS_ERROR;
+
+    *lba = chs->cyl * (NUM_OF_HEADS * NUM_OF_SECTS) + chs->head * NUM_OF_SECTS + chs->sect;
+
     return CIDEV_SUCCESS;
 }
 /***
@@ -43,16 +49,25 @@ CIDEV_RET_CODE chs2lba(chs_t *chs, lba_t *lba)
  */
 CIDEV_RET_CODE readDisk(lba_t lba, unsigned int size, char **buffer)
 {
-// todo: verify parameters
+    // todo: verify parameters
+    // memcpy(dest/buffer, src/src, size)
+    if (lba >= MAX_LOGICAL_BLOCK)
+        return CIDEV_ADDRESS_ERROR;
+    
+    if(lba + size/SECT_SIZE < MAX_LOGICAL_BLOCK)
+        return CIDEV_ADDRESS_ERROR;
 
     chs_t chs;
 
-    *buffer = malloc(11*sizeof(char)); // todo: modify as required
-    strcpy(*buffer, "CHANGE ME!");
+    lba2chs(lba, &chs);
+
+    *buffer = malloc(size * sizeof(char)); // todo: modify as required
 
     CIDEV_RET_CODE errCode = CIDEV_SUCCESS;
 
-    // todo: implement
+    // for loop for as many sectors as we are copying
+    // do one at a time with memcopy
+    // increment lba for next one
 
     return errCode;
 }
