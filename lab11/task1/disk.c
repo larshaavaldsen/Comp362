@@ -5,6 +5,8 @@
 //////////////////////////////////////////////////////////////////////////
 
 #include "disk.h"
+#include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
 
@@ -53,30 +55,39 @@ CIDEV_RET_CODE readDisk(lba_t lba, unsigned int size, char **buffer)
 {
     // todo: verify parameters
     // memcpy(dest/buffer, src/src, size)
-    if (lba >= MAX_LOGICAL_BLOCK)
+    if (lba >= MAX_LOGICAL_BLOCK) {
         return CIDEV_ADDRESS_ERROR;
+    }
+        
     
-    if(lba + size/SECT_SIZE < MAX_LOGICAL_BLOCK)
+    if(lba + (size/SECT_SIZE) > MAX_LOGICAL_BLOCK){
         return CIDEV_ADDRESS_ERROR;
+    } 
 
     chs_t chs;
 
     lba2chs(lba, &chs);
 
-    *buffer = malloc(size * sizeof(char)); // todo: modify as required
+    *buffer = malloc(size+1 * sizeof(char)); // todo: modify as required
 
     CIDEV_RET_CODE errCode = CIDEV_SUCCESS;
 
     // for loop for as many sectors as we are copying
     // do one at a time with memcopy
     // increment lba for next one
-    for (int i = 0; i < size/SECT_SIZE; i++) {
-        lba2chs(lba, &chs);
-        memcpy(buffer[i], disk[chs.cyl][chs.head][chs.sect], SECT_SIZE);
-        lba++;
+    int i;
+    for (i = 0; i < size /SECT_SIZE; i++) {
+        lba2chs(lba + i, &chs);
+        memcpy((*buffer) + (i * SECT_SIZE), disk[chs.cyl][chs.head][chs.sect], SECT_SIZE);
     }
 
-    *buffer[size] = '\0';
+    if(size % SECT_SIZE != 0) {
+        // memcpy((*buffer) + (i + SECT_SIZE), disk[chs.cyl][chs.head][chs.sect], SECT_SIZE);
+        lba2chs(lba + i, &chs);
+        memcpy((*buffer)+(i * SECT_SIZE), disk[chs.cyl][chs.head][chs.sect], size % SECT_SIZE);
+    }
+    // (*buffer)[size] = '\0';
+    
     return errCode;
 }
 
@@ -118,7 +129,7 @@ CIDEV_RET_CODE clearBlock(lba_t lba)
  */
 CIDEV_RET_CODE writeDisk(lba_t lba, char *buffer)
 {
-    if (lba + sizeof(*buffer) > MAX_LOGICAL_BLOCK) {
+    if ((lba + (strlen(buffer))/SECT_SIZE) > MAX_LOGICAL_BLOCK) {
         return CIDEV_SPACE_ERROR;
     }
 
@@ -127,7 +138,17 @@ CIDEV_RET_CODE writeDisk(lba_t lba, char *buffer)
     chs_t chs;
     lba2chs(lba, &chs);
 
-    // for loop that goes through each sector in the buffer and copies it into the 
+    // get size
+    int size = strlen(buffer);
+    int i;
+    for (i = 0; i < size / SECT_SIZE; i++) {
+        lba2chs(lba + i, &chs);
+        memcpy(disk[chs.cyl][chs.head][chs.sect], (buffer) + (i * SECT_SIZE), SECT_SIZE);
+    } if (size % SECT_SIZE != 0) {
+        lba2chs(lba + i, &chs);
+        memcpy(disk[chs.cyl][chs.head][chs.sect], buffer + ((i) * SECT_SIZE), size % SECT_SIZE);
+    }
+
 
     return errCode;
 }
