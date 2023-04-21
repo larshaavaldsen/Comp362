@@ -58,7 +58,7 @@ typedef struct
 {
   unsigned int cyl;
   unsigned int head;
-  unsigned int sect;ba
+  unsigned int sect;
 } chs_t;
 
 typedef enum {

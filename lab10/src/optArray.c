@@ -20,7 +20,7 @@ int hitPageNumber;
 int numOfFaults;
 
 // this index is used to go through the sequence of pages references
-int currentPgeReferenceIndex;
+int currentPgeReferenceIndex = 0;
 
 int testOPT(int numOfFrames, int *refString, int refStrLen)
 {
@@ -37,11 +37,13 @@ int testOPT(int numOfFrames, int *refString, int refStrLen)
     for (int i = 0; i < refStrLen; i++) {
         hitPageNumber = -1;
         victimIndex = -1;
+        currentPgeReferenceIndex = i;
         insertOPT(refString[i]);
         printf("%d -> ", refString[i]);
         displayOPT();
     }
-
+    
+    freePageTableOPT();
     return numOfFaults;
 }
 
@@ -82,8 +84,7 @@ int findVictimPageOPT()
     // loop through our page table
     for (int i = 0; i < numOfFramesPerProcess; i++) {
         // loop through our reference string
-        for(int j = 0; j < refStringLength; j++) {
-            // if page table == reference string
+        for(int j = currentPgeReferenceIndex; j < refStringLength; j++) { 
             if(pageTable[i] == referenceString[j]) {
                 if(j > farthest) {
                     farthest = j;
@@ -91,7 +92,7 @@ int findVictimPageOPT()
                 }
                 break;
             }
-        if (j == refStringLength) {
+        if (j == refStringLength - 1) {
             victimIndex = i;
             return i;
         }
@@ -120,5 +121,5 @@ void displayOPT()
 
 void freePageTableOPT()
 {
-    // TODO: implement
+    free(pageTable);
 }

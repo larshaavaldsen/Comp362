@@ -5,6 +5,8 @@
 //////////////////////////////////////////////////////////////////////////
 
 #include "disk.h"
+#include <string.h>
+#include <unistd.h>
 
 disk_t disk;
 
@@ -68,7 +70,13 @@ CIDEV_RET_CODE readDisk(lba_t lba, unsigned int size, char **buffer)
     // for loop for as many sectors as we are copying
     // do one at a time with memcopy
     // increment lba for next one
+    for (int i = 0; i < size/SECT_SIZE; i++) {
+        lba2chs(lba, &chs);
+        memcpy(buffer[i], disk[chs.cyl][chs.head][chs.sect], SECT_SIZE);
+        lba++;
+    }
 
+    *buffer[size] = '\0';
     return errCode;
 }
 
@@ -110,13 +118,16 @@ CIDEV_RET_CODE clearBlock(lba_t lba)
  */
 CIDEV_RET_CODE writeDisk(lba_t lba, char *buffer)
 {
-// todo: verify the parameters
+    if (lba + sizeof(*buffer) > MAX_LOGICAL_BLOCK) {
+        return CIDEV_SPACE_ERROR;
+    }
 
     CIDEV_RET_CODE errCode = CIDEV_SUCCESS;
 
     chs_t chs;
+    lba2chs(lba, &chs);
 
-// todo: implement
+    // for loop that goes through each sector in the buffer and copies it into the 
 
     return errCode;
 }

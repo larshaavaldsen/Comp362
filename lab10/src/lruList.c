@@ -150,8 +150,11 @@ void displayLRU(void)
 
 void freePageTableLRU(void)
 {
-     for (FRAME *curr = pageTableTop; curr != NULL; curr = curr->down) {
-        free(curr);
-     }
+    FRAME *tmp;
+    for (FRAME *curr = pageTableTop; curr != NULL;) {
+        tmp = curr;
+        curr = curr->down;
+        free(tmp);
+    }
 }
 
