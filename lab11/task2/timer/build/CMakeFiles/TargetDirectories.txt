@@ -1,0 +1,3 @@
+/media/psf/Dropbox for Business/Teaching/Fall2018/COMP362-F18/labSols/proj02Sol/timer/build/CMakeFiles/rebuild_cache.dir
+/media/psf/Dropbox for Business/Teaching/Fall2018/COMP362-F18/labSols/proj02Sol/timer/build/CMakeFiles/timer_posix.dir
+/media/psf/Dropbox for Business/Teaching/Fall2018/COMP362-F18/labSols/proj02Sol/timer/build/CMakeFiles/edit_cache.dir
