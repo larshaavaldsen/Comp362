@@ -279,7 +279,7 @@ int main(int argc, char *argv[])
 #if defined( __DEBUG_TIMER ) && defined ( __linux__ )
 
    srand(time(NULL));
-
+   
    signal(SIGALRM, testWithTime);
    start_timer();
 

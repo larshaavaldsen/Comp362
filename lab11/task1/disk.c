@@ -83,10 +83,12 @@ CIDEV_RET_CODE readDisk(lba_t lba, unsigned int size, char **buffer)
 
     if(size % SECT_SIZE != 0) {
         // memcpy((*buffer) + (i + SECT_SIZE), disk[chs.cyl][chs.head][chs.sect], SECT_SIZE);
+        printf("\nhere!!!!!----- \n");
         lba2chs(lba + i, &chs);
         memcpy((*buffer)+(i * SECT_SIZE), disk[chs.cyl][chs.head][chs.sect], size % SECT_SIZE);
     }
-    // (*buffer)[size] = '\0';
+    
+    (*buffer)[size] = '\0';
     
     return errCode;
 }
