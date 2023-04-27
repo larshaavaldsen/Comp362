@@ -1,1 +1,0 @@
-cmd_/home/lars/comp362/lab11/cidev/cidevmod/Module.symvers := sed 's/\.ko$$/\.o/' /home/lars/comp362/lab11/cidev/cidevmod/modules.order | scripts/mod/modpost -m -a  -o /home/lars/comp362/lab11/cidev/cidevmod/Module.symvers -e -i Module.symvers   -T -

@@ -5,10 +5,6 @@
 //////////////////////////////////////////////////////////////////////////
 
 #include "disk.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
 
 disk_t disk;
 
@@ -58,8 +54,7 @@ CIDEV_RET_CODE readDisk(lba_t lba, unsigned int size, char **buffer)
     if (lba >= MAX_LOGICAL_BLOCK) {
         return CIDEV_ADDRESS_ERROR;
     }
-        
-    
+
     if(lba + (size/SECT_SIZE) > MAX_LOGICAL_BLOCK){
         return CIDEV_ADDRESS_ERROR;
     } 
@@ -68,7 +63,7 @@ CIDEV_RET_CODE readDisk(lba_t lba, unsigned int size, char **buffer)
 
     lba2chs(lba, &chs);
 
-    *buffer = malloc(size+1 * sizeof(char)); // todo: modify as required
+    *buffer = kmalloc(size+1 * sizeof(char), GFP_USER); // todo: modify as required
 
     CIDEV_RET_CODE errCode = CIDEV_SUCCESS;
 
@@ -107,8 +102,8 @@ CIDEV_RET_CODE clearBlock(lba_t lba)
 #endif
     if (writeBuffer == NULL)
         return CIDEV_SPACE_ERROR;
-
-    for (int i = 0; i < SECT_SIZE; i++)
+    int i;
+    for (i = 0; i < SECT_SIZE; i++)
         writeBuffer[i] = '.';
 
     CIDEV_RET_CODE errCode = writeDisk(lba, writeBuffer);

@@ -14,6 +14,7 @@
 #include <linux/uaccess.h>
 
 #include "../inc/ci_dev.h"
+#include "disk.h"
 
 // arbitrary number
 #define CIDEV_MAJOR 444
@@ -63,6 +64,8 @@ static ssize_t cidev_write( struct file *filp, const char __user *buf, size_t co
        
 	if (copy_from_user(storage, buf, count) != 0)
 		return -EFAULT;
+
+   writeDisk(3, storage);
 
 	return count;
 }

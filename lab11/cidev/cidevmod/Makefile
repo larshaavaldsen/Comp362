@@ -9,7 +9,7 @@ KDIR	:= /lib/modules/$(UNAME)/build
 PWD	:= $(shell pwd)
 
 MOD_TARGET = cidev
-cidev-objs := ci_dev.o
+cidev-objs := ci_dev.o disk.o
 
 obj-m	+= $(MOD_TARGET).o
 
