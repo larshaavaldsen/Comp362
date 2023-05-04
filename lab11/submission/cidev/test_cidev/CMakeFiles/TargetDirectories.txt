@@ -1,0 +1,3 @@
+/home/lars/comp362/lab11/cidev/test_cidev/CMakeFiles/test_cidev.dir
+/home/lars/comp362/lab11/cidev/test_cidev/CMakeFiles/edit_cache.dir
+/home/lars/comp362/lab11/cidev/test_cidev/CMakeFiles/rebuild_cache.dir
