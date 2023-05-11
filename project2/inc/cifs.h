@@ -273,7 +273,7 @@ typedef struct cifs_context_type
 {
 	CIFS_SUPERBLOCK_TYPE* superblock; // holds a copy of the volume superblock
 	unsigned char* bitvector; // an in-memory copy of the bitvector of the volume
-	CIFS_REGISTRY* registry; // the hashtable-based in-memory registry
+	CIFS_REGISTRY_ENTRY_TYPE** registry; // the hashtable-based in-memory registry
 	CIFS_PROCESS_CONTROL_BLOCK_TYPE* processList; // a list of processes that opened files
 } CIFS_CONTEXT_TYPE;
 

@@ -1,2 +1,2 @@
-V={Aa, Bbb, Cccc, Ddddd}
-E={{Aa, Cccc}, {Aa, Ddddd}, {Bbb, Cccc}, {Cccc, Bbb}, {Cccc, Ddddd}, {Ddddd, Aa}, {Ddddd, Cccc}}
+V={P1, P2, P3, P4, P5, R1, R2, R3, R4}
+E={{R1, P1}, {R2, P2}, {R3, P5}, {R4, P4}, {P1, R2}, {P2, R3}, {P5, R4}, {P4, R1}, {P3, R1}, {P3, R3}}

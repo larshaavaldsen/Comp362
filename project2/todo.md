@@ -17,3 +17,15 @@ file system context
  elements are added to the list of processes when they successfully open files; when a file is closed
  (by the same process), then the entry is removed
  ```
+
+ Todo - finish cifsmount
+
+ then do open (or somehow open hacky) for root directory
+
+ then implement create and delete files
+
+ breadth first search
+ add every directory to a queue
+ add files to to registry 
+ search each item in the queue 
+ 

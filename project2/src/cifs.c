@@ -12,6 +12,9 @@
 //////////////////////////////////////////////////////////////////////////
 
 #include "cifs.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 //////////////////////////////////////////////////////////////////////////
 ///
@@ -242,10 +245,41 @@ CIFS_ERROR cifsMountFileSystem(char* cifsFileName)
 	// get the bitvector of the volume
 	cifsContext->bitvector = malloc(cifsContext->superblock->cifsNumberOfBlocks / 8);
 	// TODO: read the bitvector from the volume (copying block after block and freeing memory as needed after copying)
+	memcpy(cifsContext->bitvector, cifsVolume, cifsContext->superblock->cifsNumberOfBlocks / 8);
 
 	// create an in-memory registry of the volume
-	cifsContext->registry = calloc(sizeof(void*), CIFS_REGISTRY_SIZE);
+	cifsContext->registry = calloc(CIFS_REGISTRY_SIZE, sizeof(CIFS_REGISTRY_ENTRY_TYPE *)) ;
+	
+
 	// TODO: traverse the file system starting with the root and populate the registry
+
+	CIFS_BLOCK_TYPE *rootDir = (CIFS_BLOCK_TYPE *) cifsReadBlock(cifsContext->superblock->cifsRootNodeIndex);
+	CIFS_FILE_DESCRIPTOR_TYPE *rootDesc = malloc(sizeof(CIFS_FILE_DESCRIPTOR_TYPE));
+	memcpy(rootDesc, &rootDir->content.fileDescriptor, sizeof(CIFS_FILE_DESCRIPTOR_TYPE));
+
+	CIFS_REGISTRY_ENTRY_TYPE* rootRegEnt = malloc(sizeof(CIFS_REGISTRY_ENTRY_TYPE));
+	memcpy(&rootRegEnt->fileDescriptor, rootDesc, sizeof(CIFS_FILE_DESCRIPTOR_TYPE));
+
+	// memcpy(cifsContext->registry[2], NULL, sizeof(void*));
+	cifsContext->registry[hash("/")] = rootRegEnt;
+	// memcpy(cifsContext->registry[hash("/")], &rootRegEnt, sizeof(void*));
+	
+	// start with root directory
+	// add info from root dir into registry
+	// registry stores a CIFS_REGISTRY_ENTRY_TYPE
+	// CIFS_REGISTRY_ENTRY_TYPE - 	
+		/*
+			// a copy of the file descriptor node from the volume
+    		CIFS_FILE_DESCRIPTOR_TYPE fileDescriptor;
+    		// file handle of the holding folder
+    		CIFS_FILE_HANDLE_TYPE parentFileHandle;
+			// reference count; increased on each new process opening the file; decreased on file close
+			int referenceCount; // if not zero, cannot delete file
+			struct cifs_registry_ent_type* next;
+		*/
+	// basically, get file descriptor, file handle, and then hash() and store in the registry at index hash()
+	// next is if there is overlap in the hash table?
+
 
 	// set the list of processes to NULL; it will be changing in response to processes opening and closing files
 	cifsContext->processList = NULL;
@@ -308,8 +342,8 @@ CIFS_ERROR cifsUmountFileSystem(char* cifsFileName)
  * Otherwise:
  *    - sets the folder/file's identifier to the current value of the next unique identifier from the superblock;
  *      then it increments the next available value in the superblock (to prepare it for the next created file)
- *      that the block is taken *    - finds an available block in the storage using the in-memory bitvector and flips the bit to indicate
-
+ *    - finds an available block in the storage using the in-memory bitvector and flips the bit to indicate
+ *      that the block is taken
  *    - creates an entry in the conflict resolution list for the corresponding in-memory registry entry
  *      that includes a file descriptor and fills all information about the file in the registry (including
  *      a backpointer to the parent directory that is the reference number of the block holding the file
@@ -323,7 +357,42 @@ CIFS_ERROR cifsUmountFileSystem(char* cifsFileName)
  */
 CIFS_ERROR cifsCreateFile(CIFS_NAME_TYPE filePath, CIFS_CONTENT_TYPE type)
 {
-	// TODO: implement
+	// TODO step 1 - check if folder is open from list of processes
+
+	// step 2 - prototype the new file with structs
+	CIFS_INDEX_TYPE newFileId = cifsContext->superblock->cifsNextUniqueIdentifier;
+	cifsContext->superblock->cifsNextUniqueIdentifier++;
+
+	CIFS_INDEX_TYPE freeBlock = cifsFindFreeBlock(cifsContext->bitvector);
+	cifsFlipBit(cifsContext->bitvector, freeBlock);
+
+	CIFS_INDEX_TYPE registryIndex = hash(filePath);
+
+	// step 3 - put in registry, deal with hash table conficts
+	// todo this, if the registry entry is taken, check if the next has a value
+	// if next has a value, continue to increment and loop through 
+	if (cifsContext->registry[hash(filePath)] != NULL) {
+		int j = 0;
+		while(cifsContext->registry[hash(filePath) + j]->next != NULL) {
+			j++;
+		}
+		int i = 1 + j;
+		while (cifsContext->registry[hash(filePath) + i] != NULL) {
+			i++;
+		}
+		cifsContext->registry[hash(filePath) + j]->next = cifsContext->registry[hash(filePath) + i];
+		registryIndex = hash(filePath) + i;
+	}
+
+	CIFS_FILE_DESCRIPTOR_TYPE* newFileDesc = malloc(sizeof(CIFS_FILE_DESCRIPTOR_TYPE *));
+
+	newFileDesc->type = type;
+	newFileDesc->identifier = newFileId;
+	strcpy(newFileDesc->name, filePath);
+	// TODO PARENT DIRECTORY BACKPOINTER
+	newFileDesc->parent_block_ref = cifsContext->superblock->cifsRootNodeIndex;
+	
+	cifsWriteBlock((unsigned char*)newFileDesc, freeBlock);
 
 	return CIFS_NO_ERROR;
 }
@@ -385,7 +454,14 @@ CIFS_ERROR cifsDeleteFile(CIFS_NAME_TYPE filePath)
  */
 CIFS_ERROR cifsOpenFile(CIFS_NAME_TYPE filePath, mode_t desiredAccessRights, CIFS_FILE_HANDLE_TYPE *fileHandle)
 {
-	// TODO: implement
+	if (cifsContext->registry[hash(filePath)] == NULL) {
+		printf("File not found in registry\n");
+		return CIFS_NOT_FOUND_ERROR;
+	}
+
+	// TODO check list of processes in context CIFS_OPEN_ERROR
+
+	// TODO check permissions
 
 	return CIFS_NO_ERROR;
 }

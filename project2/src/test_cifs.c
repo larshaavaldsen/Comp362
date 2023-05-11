@@ -158,6 +158,8 @@ void testStep1()
 	printf("\n\nTESTS FOR STEP #1\n=================\n\n");
 
 	// TODO: implement
+	cifsOpenFile("/", 700, NULL); // placeholder for opening root folder from registry
+	cifsCreateFile("/test", CIFS_FOLDER_CONTENT_TYPE);
 }
 
 

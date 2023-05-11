@@ -1,0 +1,4 @@
+/home/lars/comp362/project2/CMakeFiles/cifs.dir
+/home/lars/comp362/project2/CMakeFiles/blockVolume.dir
+/home/lars/comp362/project2/CMakeFiles/edit_cache.dir
+/home/lars/comp362/project2/CMakeFiles/rebuild_cache.dir
